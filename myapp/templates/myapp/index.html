@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    {% for item in task_list %}
+        <p>Task: {{ item.task }}</p>
+        <p>Date of creation: {{ item.date_of_creation }}</p>
+        <p>Status: {{ item.status }}</p>
+        <p>Priority: {{ item.priority }}</p>
+        <p>Executor: {{ item.executor }}</p>
+        <br>
+    {% endfor %}
+
+</body>
+</html>
